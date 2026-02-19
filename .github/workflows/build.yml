@@ -221,7 +221,7 @@ jobs:
       - name: Build dlc.dat and plain lists
         run: |
           cd code || exit 1
-          go run ./ --outputdir=../ --exportlists=cn,tld,geolocation,apple,icloud,facebook,tiktok,ai,cdn,stream,download,global,china,reject,reject-drop,reject-no-drop,category-ads-all,category-ai-!cn,category-cdn,category-entertainment,category-social-media,category-scholar,category-pt,category-porn,category-cryptocurrency
+          go run ./ --outputdir=../ --exportlists=cn,geolocation-\!cn,apple,icloud,facebook,tiktok,ai,cdn,stream,download,global,china,reject,reject-drop,reject-no-drop,category-ads-all,category-ai-\!cn,category-cdn,category-ntp,category-entertainment,category-social-media,category-scholar,category-pt,category-porn,category-cryptocurrency
           go run ./cmd/datdump/main.go --inputdata=../dlc.dat --outputdir=../ --exportlists=_all_
           cd ../ && rm -rf code
 
