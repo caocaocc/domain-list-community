@@ -162,7 +162,7 @@ jobs:
           echo "domain:suno.com" >> ./code/data/category-ai-!cn
           echo "domain:minimax.io" >> ./code/data/category-ai-!cn
           echo "include:ai" >> ./code/data/category-ai-!cn
-          echo "include:cdn" >> ./code/data/category-cdn
+          echo "include:cdn" >> ./code/data/category-cdn-!cn
           echo "include:stream" >> ./code/data/category-entertainment
           echo "include:china" >> ./code/data/cn
           echo "full:stun.cloudflare.com" >> ./code/data/category-ntp
